@@ -1,4 +1,4 @@
-FROM babim/centosbase:7-x86
+FROM babim/centosbase:7
 ENV SOFT	OpUtils
 #ENV SOFTSUB	opmanager
 #ENV EDITTION	essential
