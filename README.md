@@ -1,4 +1,4 @@
-# opmanager
+# OpUtils
 ManageEngine OpUtils on docker
 
 To quickly get started running use the following command:
