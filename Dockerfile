@@ -5,6 +5,7 @@ ENV SOFT	OpUtils
 ENV SOFT_OPT	/opt/ManageEngine
 ENV SOFT_HOME	${SOFT_OPT}/${SOFT}${SOFTSUB}
 ENV MACHINE_TYPE x86
+ENV MANUAL	true
 
 # download option
 RUN yum install curl -y && \
@@ -21,4 +22,5 @@ VOLUME ["${SOFT_OPT}"]
 # Expose default HTTP connector port.
 EXPOSE 8060 161/udp 162/udp
 
-CMD ["/docker-entrypoint.sh"]
+CMD ["/usr/sbin/init"]
+#CMD ["/docker-entrypoint.sh"]
