@@ -5,6 +5,7 @@ ENV SOFT	OpUtils
 ENV SOFT_OPT	/opt/ManageEngine
 ENV SOFT_HOME	${SOFT_OPT}/${SOFT}${SOFTSUB}
 ENV MACHINE_TYPE x86
+ENV FIXED	true
 
 # download option
 RUN yum install curl -y && \
